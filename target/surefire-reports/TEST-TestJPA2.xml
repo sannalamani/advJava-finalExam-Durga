@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestJPA2" time="0.622" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\advJava-finalExam-Durga\target\test-classes;D:\advJava-finalExam-Durga\target\classes;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.7.1\spring-boot-starter-web-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.1\spring-boot-starter-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot\2.7.1\spring-boot-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.1\spring-boot-autoconfigure-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.1\spring-boot-starter-logging-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\Manikanta Sannala\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\Manikanta Sannala\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Manikanta Sannala\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.1\spring-boot-starter-json-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.3\jackson-datatype-jdk8-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.3\jackson-datatype-jsr310-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.3\jackson-module-parameter-names-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.7.1\spring-boot-starter-tomcat-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.64\tomcat-embed-core-9.0.64.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.64\tomcat-embed-el-9.0.64.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.64\tomcat-embed-websocket-9.0.64.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-web\5.3.21\spring-web-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-webmvc\5.3.21\spring-webmvc-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.7.1\spring-boot-starter-test-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-test\2.7.1\spring-boot-test-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.7.1\spring-boot-test-autoconfigure-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\Manikanta Sannala\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Manikanta Sannala\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Manikanta Sannala\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\slf4j\slf4j-api\1.7.33\slf4j-api-1.7.33.jar;C:\Users\Manikanta Sannala\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Manikanta Sannala\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\Manikanta Sannala\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\mockito\mockito-core\4.5.1\mockito-core-4.5.1.jar;C:\Users\Manikanta Sannala\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.9\byte-buddy-agent-1.12.9.jar;C:\Users\Manikanta Sannala\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\mockito\mockito-junit-jupiter\4.5.1\mockito-junit-jupiter-4.5.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Manikanta Sannala\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-core\5.3.21\spring-core-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-jcl\5.3.21\spring-jcl-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\Manikanta Sannala\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Manikanta Sannala\.m2\repository\org\hibernate\hibernate-core\5.6.9.Final\hibernate-core-5.6.9.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Manikanta Sannala\.m2\repository\net\bytebuddy\byte-buddy\1.12.9\byte-buddy-1.12.9.jar;C:\Users\Manikanta Sannala\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Manikanta Sannala\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Manikanta Sannala\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Manikanta Sannala\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-orm\5.3.20\spring-orm-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-beans\5.3.20\spring-beans-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-jdbc\5.3.20\spring-jdbc-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-tx\5.3.20\spring-tx-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-test\5.3.20\spring-test-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-context\5.3.20\spring-context-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-aop\5.3.20\spring-aop-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-expression\5.3.20\spring-expression-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\Manikanta Sannala\AppData\Local\Temp\surefire7289277926244838591\surefirebooter-20230708122047322_3.jar C:\Users\Manikanta Sannala\AppData\Local\Temp\surefire7289277926244838591 2023-07-08T12-20-47_086-jvmRun1 surefire-20230708122047322_1tmp surefire_0-20230708122047322_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\advJava-finalExam-Durga\target\test-classes;D:\advJava-finalExam-Durga\target\classes;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.7.1\spring-boot-starter-web-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.1\spring-boot-starter-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot\2.7.1\spring-boot-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.1\spring-boot-autoconfigure-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.1\spring-boot-starter-logging-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\Manikanta Sannala\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\Manikanta Sannala\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Manikanta Sannala\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.1\spring-boot-starter-json-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.3\jackson-datatype-jdk8-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.3\jackson-datatype-jsr310-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.3\jackson-module-parameter-names-2.13.3.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.7.1\spring-boot-starter-tomcat-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.64\tomcat-embed-core-9.0.64.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.64\tomcat-embed-el-9.0.64.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.64\tomcat-embed-websocket-9.0.64.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-web\5.3.21\spring-web-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-webmvc\5.3.21\spring-webmvc-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.7.1\spring-boot-starter-test-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-test\2.7.1\spring-boot-test-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.7.1\spring-boot-test-autoconfigure-2.7.1.jar;C:\Users\Manikanta Sannala\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\Manikanta Sannala\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Manikanta Sannala\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Manikanta Sannala\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\slf4j\slf4j-api\1.7.33\slf4j-api-1.7.33.jar;C:\Users\Manikanta Sannala\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Manikanta Sannala\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\Manikanta Sannala\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\mockito\mockito-core\4.5.1\mockito-core-4.5.1.jar;C:\Users\Manikanta Sannala\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.9\byte-buddy-agent-1.12.9.jar;C:\Users\Manikanta Sannala\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\mockito\mockito-junit-jupiter\4.5.1\mockito-junit-jupiter-4.5.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Manikanta Sannala\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-core\5.3.21\spring-core-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-jcl\5.3.21\spring-jcl-5.3.21.jar;C:\Users\Manikanta Sannala\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\Manikanta Sannala\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Manikanta Sannala\.m2\repository\org\hibernate\hibernate-core\5.6.9.Final\hibernate-core-5.6.9.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Manikanta Sannala\.m2\repository\net\bytebuddy\byte-buddy\1.12.9\byte-buddy-1.12.9.jar;C:\Users\Manikanta Sannala\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Manikanta Sannala\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Manikanta Sannala\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Manikanta Sannala\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Manikanta Sannala\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Manikanta Sannala\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-orm\5.3.20\spring-orm-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-beans\5.3.20\spring-beans-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-jdbc\5.3.20\spring-jdbc-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-tx\5.3.20\spring-tx-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-test\5.3.20\spring-test-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-context\5.3.20\spring-context-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-aop\5.3.20\spring-aop-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\springframework\spring-expression\5.3.20\spring-expression-5.3.20.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Manikanta Sannala\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Manikanta Sannala\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Manikanta Sannala"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-13.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\advJava-finalExam-Durga"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Manikanta Sannala\AppData\Local\Temp\surefire7289277926244838591\surefirebooter-20230708122047322_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="13.0.2+8"/>
+    <property name="user.name" value="Manikanta"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Manikanta Sannala\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MANIKA~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.3.2"/>
+    <property name="java.version" value="13.0.2"/>
+    <property name="user.dir" value="D:\advJava-finalExam-Durga"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ARX-3.9.1\bin;C:\Users\Manikanta Sannala\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\Java\jdk-13.0.2\bin;C:\Android;C:\Windows\System32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Manikanta Sannala\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Manikanta Sannala\AppData\Local\pip;C:\Program Files\Amazon\AWSCLIV2\;D:\program files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Manikanta Sannala\.pyenv\pyenv-win\bin;C:\Users\Manikanta Sannala\.pyenv\pyenv-win\shims;C;\Program Files\CodeBlocks\MinGW\bin;D:\program files\Microsoft VS Code\bin;C:\Users\Manikanta Sannala\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="13.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="testFetchData" classname="TestJPA2" time="0.594">
+    <system-out><![CDATA[12:20:56.710 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:20:56.711 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:20:56.711 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [TestJPA2] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+12:20:56.713 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@7e0986c9 declaringClass = 'TestJPA2', classes = '{class SpringConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+12:20:56.717 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [TestJPA2]
+12:20:56.717 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [TestJPA2]: using defaults.
+12:20:56.718 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+12:20:56.719 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b021664, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f59da34, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@752973de, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@52a67293, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@793cef95, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38f502fc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67c21bf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@67afe909, org.springframework.test.context.event.EventPublishingTestExecutionListener@79f1e22e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6903ed0e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e154848, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@16ea0f22, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60fc7f43, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@16e195cf, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3212d853]
+12:20:56.719 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@74c7522c testClass = TestJPA2, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+12:20:56.720 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:56.720 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+12:20:56.722 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@74c7522c testClass = TestJPA2, testInstance = TestJPA2@6d17914a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+12:20:56.722 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:56.723 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+12:20:56.730 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:56.730 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+12:20:56.737 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@74c7522c testClass = TestJPA2, testInstance = TestJPA2@6d17914a, testMethod = testFetchData@TestJPA2, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+12:20:56.738 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:56.738 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+12:20:56.738 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:56.739 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+12:20:56.740 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:56.741 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+12:20:56.751 [main] DEBUG org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+12:20:56.805 [main] DEBUG org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@5df92089
+12:20:56.858 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: FROM fr.epita.advjava.datamodel.Member
+12:20:56.865 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - Keyword  'Member' is being interpreted as an identifier due to: expecting IDENT, found 'Member'
+12:20:56.865 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+12:20:56.880 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[IDENT] Node: 'fr'
+                |  |  |  \-[IDENT] Node: 'epita'
+                |  |  \-[IDENT] Node: 'advjava'
+                |  \-[IDENT] Node: 'datamodel'
+                \-[WEIRD_IDENT] Node: 'Member'
+
+12:20:56.917 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+12:20:56.947 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : fr.epita.advjava.datamodel.Member (<no alias>) -> member0_
+12:20:56.947 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+12:20:56.947 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} MEMBERS member0_ ) )
+12:20:56.959 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+12:20:56.966 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Member): [MEMBERS]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(fr.epita.advjava.datamodel.Member)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+12:20:56.971 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [MEMBERS member0_]
+12:20:56.971 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+12:20:56.972 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (MEMBERS)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'member0_.memid as memid1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=MEMBERS,tableAlias=member0_,origin=null,columns={,className=fr.epita.advjava.datamodel.Member}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'member0_.address as address2_2_, member0_.firstname as firstnam3_2_, member0_.joindate as joindate4_2_, member0_.recommendedby as recommen5_2_, member0_.surname as surname6_2_, member0_.telephone as telephon7_2_, member0_.zipcode as zipcode8_2_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[member0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'MEMBERS member0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=MEMBERS,tableAlias=member0_,origin=null,columns={,className=fr.epita.advjava.datamodel.Member}}
+
+12:20:56.972 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+12:20:56.985 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: FROM fr.epita.advjava.datamodel.Member
+12:20:56.985 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select member0_.memid as memid1_2_, member0_.address as address2_2_, member0_.firstname as firstnam3_2_, member0_.joindate as joindate4_2_, member0_.recommendedby as recommen5_2_, member0_.surname as surname6_2_, member0_.telephone as telephon7_2_, member0_.zipcode as zipcode8_2_ from MEMBERS member0_
+12:20:56.985 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+12:20:57.092 [main] DEBUG org.hibernate.SQL - select member0_.memid as memid1_2_, member0_.address as address2_2_, member0_.firstname as firstnam3_2_, member0_.joindate as joindate4_2_, member0_.recommendedby as recommen5_2_, member0_.surname as surname6_2_, member0_.telephone as telephon7_2_, member0_.zipcode as zipcode8_2_ from MEMBERS member0_
+Hibernate: select member0_.memid as memid1_2_, member0_.address as address2_2_, member0_.firstname as firstnam3_2_, member0_.joindate as joindate4_2_, member0_.recommendedby as recommen5_2_, member0_.surname as surname6_2_, member0_.telephone as telephon7_2_, member0_.zipcode as zipcode8_2_ from MEMBERS member0_
+12:20:57.093 [main] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1]
+12:20:57.125 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:20:57.136 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#0]
+12:20:57.151 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+12:20:57.151 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#1]
+12:20:57.153 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+12:20:57.153 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#2]
+12:20:57.154 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+12:20:57.154 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#3]
+12:20:57.155 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+12:20:57.156 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#4]
+12:20:57.157 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+12:20:57.157 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#5]
+12:20:57.158 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+12:20:57.158 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#6]
+12:20:57.159 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+12:20:57.159 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#7]
+12:20:57.160 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+12:20:57.160 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#8]
+12:20:57.161 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+12:20:57.161 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#9]
+12:20:57.162 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+12:20:57.162 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#10]
+12:20:57.163 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+12:20:57.165 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#11]
+12:20:57.166 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+12:20:57.167 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#12]
+12:20:57.167 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+12:20:57.168 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#13]
+12:20:57.168 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+12:20:57.169 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#14]
+12:20:57.169 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+12:20:57.170 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#15]
+12:20:57.171 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+12:20:57.172 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#16]
+12:20:57.172 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+12:20:57.172 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#17]
+12:20:57.173 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+12:20:57.173 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#20]
+12:20:57.173 [main] DEBUG org.hibernate.loader.Loader - Result set row: 19
+12:20:57.173 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#21]
+12:20:57.173 [main] DEBUG org.hibernate.loader.Loader - Result set row: 20
+12:20:57.174 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#22]
+12:20:57.174 [main] DEBUG org.hibernate.loader.Loader - Result set row: 21
+12:20:57.174 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#24]
+12:20:57.174 [main] DEBUG org.hibernate.loader.Loader - Result set row: 22
+12:20:57.174 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#26]
+12:20:57.175 [main] DEBUG org.hibernate.loader.Loader - Result set row: 23
+12:20:57.175 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#27]
+12:20:57.175 [main] DEBUG org.hibernate.loader.Loader - Result set row: 24
+12:20:57.175 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#28]
+12:20:57.176 [main] DEBUG org.hibernate.loader.Loader - Result set row: 25
+12:20:57.176 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#29]
+12:20:57.176 [main] DEBUG org.hibernate.loader.Loader - Result set row: 26
+12:20:57.176 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#30]
+12:20:57.176 [main] DEBUG org.hibernate.loader.Loader - Result set row: 27
+12:20:57.177 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#33]
+12:20:57.177 [main] DEBUG org.hibernate.loader.Loader - Result set row: 28
+12:20:57.177 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#35]
+12:20:57.177 [main] DEBUG org.hibernate.loader.Loader - Result set row: 29
+12:20:57.177 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Member#36]
+12:20:57.182 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#0]
+12:20:57.182 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = GUEST
+12:20:57.182 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = GUEST
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-01 00:00:00.0
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = GUEST
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (000) 000-0000
+12:20:57.183 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.184 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 0
+12:20:57.184 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.185 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#0]
+12:20:57.185 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#1]
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 8 Bloomsbury Close, Boston
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Darren
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-02 12:02:05.0
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Smith
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 555-555-5555
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 4321
+12:20:57.186 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#1]
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#2]
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 8 Bloomsbury Close, New York
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Tracy
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-02 12:08:23.0
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Smith
+12:20:57.187 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 555-555-5555
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 4321
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#2]
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#3]
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 23 Highway Way, Boston
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Tim
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-03 09:32:15.0
+12:20:57.188 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Rownam
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (844) 693-0723
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 23423
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#3]
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#4]
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 20 Crossing Road, New York
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.189 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Janice
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-03 10:25:05.0
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 1
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Joplette
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (833) 942-4710
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 234
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.190 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#4]
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#5]
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 1065 Huntingdon Avenue, Boston
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Gerald
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-09 10:44:09.0
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 1
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Butters
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (844) 078-4130
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 56754
+12:20:57.191 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#5]
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#6]
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 3 Tunisia Drive, Boston
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Burton
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-15 08:52:55.0
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Tracy
+12:20:57.192 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 354-9973
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 45678
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#6]
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#7]
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 6 Hunting Lodge Way, Boston
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.193 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Nancy
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-25 08:59:12.0
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 4
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Dare
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (833) 776-4001
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 10383
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.194 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#7]
+12:20:57.195 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#8]
+12:20:57.195 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 3 Bloomsbury Close, Reading, 00234
+12:20:57.195 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.196 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Tim
+12:20:57.196 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.197 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-25 16:02:35.0
+12:20:57.197 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.197 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 3
+12:20:57.197 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.198 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Boothe
+12:20:57.198 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.198 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (811) 433-2547
+12:20:57.198 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.198 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 234
+12:20:57.198 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.199 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#8]
+12:20:57.199 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#9]
+12:20:57.199 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 5 Dragons Way, Winchester
+12:20:57.199 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.199 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Ponder
+12:20:57.199 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.200 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-07-25 17:09:05.0
+12:20:57.200 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.200 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 6
+12:20:57.200 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.201 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Stibbons
+12:20:57.201 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.201 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (833) 160-3900
+12:20:57.201 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.201 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 87630
+12:20:57.201 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#9]
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#10]
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 52 Cheshire Grove, Winchester, 28563
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Charles
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-03 19:42:37.0
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 1
+12:20:57.202 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Owen
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (855) 542-5251
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 28563
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#10]
+12:20:57.203 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#11]
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 976 Gnats Close, Reading
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = David
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-06 16:32:55.0
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 4
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Jones
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (844) 536-8036
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.204 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 33862
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#11]
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#12]
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 55 Powdery Street, Boston
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Anne
+12:20:57.205 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-10 14:23:22.0
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 9
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Baker
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 844-076-5141
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 80743
+12:20:57.206 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#12]
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#13]
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 103 Firth Avenue, North Reading
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Jemima
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-10 14:28:01.0
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Farrell
+12:20:57.207 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (855) 016-0163
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 57392
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#13]
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#14]
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 252 Binkington Way, Boston
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.208 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Jack
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-10 16:22:05.0
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 1
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Smith
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 163-3254
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 69302
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#14]
+12:20:57.209 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#15]
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 264 Ursula Drive, Westford
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Florence
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-10 17:52:03.0
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 9
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Bader
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (833) 499-3527
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 84923
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.210 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#15]
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#16]
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 329 James Street, Reading
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Timothy
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-15 10:34:25.0
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 13
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Baker
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 833-941-0824
+12:20:57.211 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 58393
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#16]
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#17]
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 5 Impreza Road, Boston
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = David
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-16 11:32:47.0
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 13
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.212 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Pinker
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 811 409-6734
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 65332
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#17]
+12:20:57.213 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#20]
+12:20:57.214 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 4 Nunnington Place, Wingfield, Boston
+12:20:57.214 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.215 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Matthew
+12:20:57.216 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.216 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-19 14:55:55.0
+12:20:57.216 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.216 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 5
+12:20:57.216 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.216 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Genting
+12:20:57.217 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.217 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (811) 972-1377
+12:20:57.217 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.217 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 52365
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#20]
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#21]
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 64 Perkington Lane, Reading
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Anna
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.218 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-26 09:32:05.0
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 1
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Mackenzie
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 661-2898
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 64577
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#21]
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#22]
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 85 Bard Street, Bloomington, Boston
+12:20:57.219 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Joan
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-08-29 08:32:41.0
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 16
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Coplin
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 499-2232
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 43533
+12:20:57.220 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.221 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#22]
+12:20:57.221 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#24]
+12:20:57.221 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 12 Bullington Lane, Boston
+12:20:57.221 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.221 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Ramnaresh
+12:20:57.221 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-01 08:44:42.0
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 15
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Sarwin
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 413-1470
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 65464
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.222 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#24]
+12:20:57.223 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#26]
+12:20:57.223 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 976 Gnats Close, Reading
+12:20:57.223 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.223 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Douglas
+12:20:57.223 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.224 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-02 18:43:05.0
+12:20:57.224 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 11
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Jones
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = 844 536-8036
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.225 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 11986
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#26]
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#27]
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 3 Burkington Plaza, Boston
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Henrietta
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.226 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-05 08:42:35.0
+12:20:57.227 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.227 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 20
+12:20:57.227 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.227 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Rumney
+12:20:57.228 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.228 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 989-8876
+12:20:57.228 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.228 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 78533
+12:20:57.228 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#27]
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#28]
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 437 Granite Farm Road, Westford
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = David
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-15 08:22:05.0
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Farrell
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (855) 755-9876
+12:20:57.229 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.232 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 43532
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#28]
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#29]
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 55 Jagbi Way, North Reading
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Henry
+12:20:57.233 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-17 12:27:15.0
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 2
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Worthington-Smyth
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (855) 894-3758
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 97676
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#29]
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#30]
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 641 Drudgery Close, Burnington, Boston
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Millicent
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-18 19:04:01.0
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.234 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 2
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Purview
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (855) 941-9786
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 34232
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#30]
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#33]
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 33 Cheerful Plaza, Drake Road, Westford
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Hyacinth
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-18 19:32:05.0
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = null
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Tupperware
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (822) 665-5327
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 68666
+12:20:57.235 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#33]
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#35]
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 5 Bullington Lane, Boston
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = John
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-19 11:32:45.0
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 30
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Hunt
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (899) 720-6978
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 54333
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#35]
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Member#36]
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Crimson Road, North Reading
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+12:20:57.236 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Erica
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `joinDate` : value = 2012-09-22 08:36:38.0
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`joinDate`)  - enhanced for lazy-loading? - false
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `recommendedBy` : value = 2
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`recommendedBy`)  - enhanced for lazy-loading? - false
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `surname` : value = Crumpet
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`surname`)  - enhanced for lazy-loading? - false
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `telephone` : value = (811) 732-4816
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`telephone`)  - enhanced for lazy-loading? - false
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `zipcode` : value = 75655
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+12:20:57.237 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Member#36]
+Members:
+Member[memId=0, surname='GUEST', firstName='GUEST', address='GUEST', zipcode=0, telephone='(000) 000-0000', recommendedBy=null, joinDate=2012-07-01 00:00:00.0]
+Member[memId=1, surname='Smith', firstName='Darren', address='8 Bloomsbury Close, Boston', zipcode=4321, telephone='555-555-5555', recommendedBy=null, joinDate=2012-07-02 12:02:05.0]
+Member[memId=2, surname='Smith', firstName='Tracy', address='8 Bloomsbury Close, New York', zipcode=4321, telephone='555-555-5555', recommendedBy=null, joinDate=2012-07-02 12:08:23.0]
+Member[memId=3, surname='Rownam', firstName='Tim', address='23 Highway Way, Boston', zipcode=23423, telephone='(844) 693-0723', recommendedBy=null, joinDate=2012-07-03 09:32:15.0]
+Member[memId=4, surname='Joplette', firstName='Janice', address='20 Crossing Road, New York', zipcode=234, telephone='(833) 942-4710', recommendedBy=1, joinDate=2012-07-03 10:25:05.0]
+Member[memId=5, surname='Butters', firstName='Gerald', address='1065 Huntingdon Avenue, Boston', zipcode=56754, telephone='(844) 078-4130', recommendedBy=1, joinDate=2012-07-09 10:44:09.0]
+Member[memId=6, surname='Tracy', firstName='Burton', address='3 Tunisia Drive, Boston', zipcode=45678, telephone='(822) 354-9973', recommendedBy=null, joinDate=2012-07-15 08:52:55.0]
+Member[memId=7, surname='Dare', firstName='Nancy', address='6 Hunting Lodge Way, Boston', zipcode=10383, telephone='(833) 776-4001', recommendedBy=4, joinDate=2012-07-25 08:59:12.0]
+Member[memId=8, surname='Boothe', firstName='Tim', address='3 Bloomsbury Close, Reading, 00234', zipcode=234, telephone='(811) 433-2547', recommendedBy=3, joinDate=2012-07-25 16:02:35.0]
+Member[memId=9, surname='Stibbons', firstName='Ponder', address='5 Dragons Way, Winchester', zipcode=87630, telephone='(833) 160-3900', recommendedBy=6, joinDate=2012-07-25 17:09:05.0]
+Member[memId=10, surname='Owen', firstName='Charles', address='52 Cheshire Grove, Winchester, 28563', zipcode=28563, telephone='(855) 542-5251', recommendedBy=1, joinDate=2012-08-03 19:42:37.0]
+Member[memId=11, surname='Jones', firstName='David', address='976 Gnats Close, Reading', zipcode=33862, telephone='(844) 536-8036', recommendedBy=4, joinDate=2012-08-06 16:32:55.0]
+Member[memId=12, surname='Baker', firstName='Anne', address='55 Powdery Street, Boston', zipcode=80743, telephone='844-076-5141', recommendedBy=9, joinDate=2012-08-10 14:23:22.0]
+Member[memId=13, surname='Farrell', firstName='Jemima', address='103 Firth Avenue, North Reading', zipcode=57392, telephone='(855) 016-0163', recommendedBy=null, joinDate=2012-08-10 14:28:01.0]
+Member[memId=14, surname='Smith', firstName='Jack', address='252 Binkington Way, Boston', zipcode=69302, telephone='(822) 163-3254', recommendedBy=1, joinDate=2012-08-10 16:22:05.0]
+Member[memId=15, surname='Bader', firstName='Florence', address='264 Ursula Drive, Westford', zipcode=84923, telephone='(833) 499-3527', recommendedBy=9, joinDate=2012-08-10 17:52:03.0]
+Member[memId=16, surname='Baker', firstName='Timothy', address='329 James Street, Reading', zipcode=58393, telephone='833-941-0824', recommendedBy=13, joinDate=2012-08-15 10:34:25.0]
+Member[memId=17, surname='Pinker', firstName='David', address='5 Impreza Road, Boston', zipcode=65332, telephone='811 409-6734', recommendedBy=13, joinDate=2012-08-16 11:32:47.0]
+Member[memId=20, surname='Genting', firstName='Matthew', address='4 Nunnington Place, Wingfield, Boston', zipcode=52365, telephone='(811) 972-1377', recommendedBy=5, joinDate=2012-08-19 14:55:55.0]
+Member[memId=21, surname='Mackenzie', firstName='Anna', address='64 Perkington Lane, Reading', zipcode=64577, telephone='(822) 661-2898', recommendedBy=1, joinDate=2012-08-26 09:32:05.0]
+Member[memId=22, surname='Coplin', firstName='Joan', address='85 Bard Street, Bloomington, Boston', zipcode=43533, telephone='(822) 499-2232', recommendedBy=16, joinDate=2012-08-29 08:32:41.0]
+Member[memId=24, surname='Sarwin', firstName='Ramnaresh', address='12 Bullington Lane, Boston', zipcode=65464, telephone='(822) 413-1470', recommendedBy=15, joinDate=2012-09-01 08:44:42.0]
+Member[memId=26, surname='Jones', firstName='Douglas', address='976 Gnats Close, Reading', zipcode=11986, telephone='844 536-8036', recommendedBy=11, joinDate=2012-09-02 18:43:05.0]
+Member[memId=27, surname='Rumney', firstName='Henrietta', address='3 Burkington Plaza, Boston', zipcode=78533, telephone='(822) 989-8876', recommendedBy=20, joinDate=2012-09-05 08:42:35.0]
+Member[memId=28, surname='Farrell', firstName='David', address='437 Granite Farm Road, Westford', zipcode=43532, telephone='(855) 755-9876', recommendedBy=null, joinDate=2012-09-15 08:22:05.0]
+Member[memId=29, surname='Worthington-Smyth', firstName='Henry', address='55 Jagbi Way, North Reading', zipcode=97676, telephone='(855) 894-3758', recommendedBy=2, joinDate=2012-09-17 12:27:15.0]
+Member[memId=30, surname='Purview', firstName='Millicent', address='641 Drudgery Close, Burnington, Boston', zipcode=34232, telephone='(855) 941-9786', recommendedBy=2, joinDate=2012-09-18 19:04:01.0]
+Member[memId=33, surname='Tupperware', firstName='Hyacinth', address='33 Cheerful Plaza, Drake Road, Westford', zipcode=68666, telephone='(822) 665-5327', recommendedBy=null, joinDate=2012-09-18 19:32:05.0]
+Member[memId=35, surname='Hunt', firstName='John', address='5 Bullington Lane, Boston', zipcode=54333, telephone='(899) 720-6978', recommendedBy=30, joinDate=2012-09-19 11:32:45.0]
+Member[memId=36, surname='Crumpet', firstName='Erica', address='Crimson Road, North Reading', zipcode=75655, telephone='(811) 732-4816', recommendedBy=2, joinDate=2012-09-22 08:36:38.0]
+12:20:57.283 [main] DEBUG org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+12:20:57.283 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: FROM fr.epita.advjava.datamodel.Facility 
+12:20:57.285 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+12:20:57.286 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[IDENT] Node: 'fr'
+                |  |  |  \-[IDENT] Node: 'epita'
+                |  |  \-[IDENT] Node: 'advjava'
+                |  \-[IDENT] Node: 'datamodel'
+                \-[IDENT] Node: 'Facility'
+
+12:20:57.286 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+12:20:57.286 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : fr.epita.advjava.datamodel.Facility (<no alias>) -> facility0_
+12:20:57.286 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+12:20:57.286 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} facilities facility0_ ) )
+12:20:57.287 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+12:20:57.287 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Facility): [facilities]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(fr.epita.advjava.datamodel.Facility)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+12:20:57.287 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [facilities facility0_]
+12:20:57.287 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+12:20:57.288 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (facilities)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'facility0_.facid as facid1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=facilities,tableAlias=facility0_,origin=null,columns={,className=fr.epita.advjava.datamodel.Facility}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'facility0_.guestcost as guestcos2_1_, facility0_.initialoutlay as initialo3_1_, facility0_.membercost as memberco4_1_, facility0_.monthlymaintenance as monthlym5_1_, facility0_.name as name6_1_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[facility0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'facilities facility0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=facilities,tableAlias=facility0_,origin=null,columns={,className=fr.epita.advjava.datamodel.Facility}}
+
+12:20:57.288 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+12:20:57.288 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: FROM fr.epita.advjava.datamodel.Facility 
+12:20:57.288 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select facility0_.facid as facid1_1_, facility0_.guestcost as guestcos2_1_, facility0_.initialoutlay as initialo3_1_, facility0_.membercost as memberco4_1_, facility0_.monthlymaintenance as monthlym5_1_, facility0_.name as name6_1_ from facilities facility0_
+12:20:57.288 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+12:20:57.288 [main] DEBUG org.hibernate.SQL - select facility0_.facid as facid1_1_, facility0_.guestcost as guestcos2_1_, facility0_.initialoutlay as initialo3_1_, facility0_.membercost as memberco4_1_, facility0_.monthlymaintenance as monthlym5_1_, facility0_.name as name6_1_ from facilities facility0_
+Hibernate: select facility0_.facid as facid1_1_, facility0_.guestcost as guestcos2_1_, facility0_.initialoutlay as initialo3_1_, facility0_.membercost as memberco4_1_, facility0_.monthlymaintenance as monthlym5_1_, facility0_.name as name6_1_ from facilities facility0_
+12:20:57.288 [main] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1]
+12:20:57.291 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:20:57.291 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#0]
+12:20:57.293 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+12:20:57.293 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#1]
+12:20:57.293 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+12:20:57.293 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#2]
+12:20:57.294 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+12:20:57.294 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#3]
+12:20:57.294 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+12:20:57.294 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#4]
+12:20:57.295 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+12:20:57.295 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#5]
+12:20:57.295 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+12:20:57.295 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#6]
+12:20:57.295 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+12:20:57.295 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#7]
+12:20:57.296 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+12:20:57.296 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[fr.epita.advjava.datamodel.Facility#8]
+12:20:57.296 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#0]
+12:20:57.296 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 25.0
+12:20:57.296 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.296 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 10000.0
+12:20:57.296 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.296 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 5.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 200.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Tennis Court 1
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#0]
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#1]
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 25.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 8000.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 5.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 200.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Tennis Court 2
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#1]
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#2]
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 16.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 4000.0
+12:20:57.297 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 0.0
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 50.0
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Badminton Court
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#2]
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#3]
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 5.0
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 320.0
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 0.0
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 10.0
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Table Tennis
+12:20:57.298 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#3]
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#4]
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 80.0
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 4000.0
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 35.0
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 3000.0
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.299 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Massage Room 1
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#4]
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#5]
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 80.0
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 4000.0
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.300 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 35.0
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 3000.0
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Massage Room 2
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#5]
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#6]
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 18.0
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 5000.0
+12:20:57.301 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.303 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 4.0
+12:20:57.303 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.303 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 80.0
+12:20:57.303 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.303 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Squash Court
+12:20:57.303 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.304 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#6]
+12:20:57.304 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#7]
+12:20:57.304 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 5.0
+12:20:57.304 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 450.0
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 0.0
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 15.0
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Snooker Table
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.305 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#7]
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [fr.epita.advjava.datamodel.Facility#8]
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `guestCost` : value = 5.0
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`guestCost`)  - enhanced for lazy-loading? - false
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `initialOutlay` : value = 400.0
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`initialOutlay`)  - enhanced for lazy-loading? - false
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `memberCost` : value = 0.0
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`memberCost`)  - enhanced for lazy-loading? - false
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `monthlyMaintenance` : value = 15.0
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`monthlyMaintenance`)  - enhanced for lazy-loading? - false
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = Pool Table
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+12:20:57.306 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [fr.epita.advjava.datamodel.Facility#8]
+Facilities:
+Facility[facId=0, name='Tennis Court 1', memberCost=5.0, guestCost=25.0, initialOutlay=10000.0, monthlyMaintenance=200.0]
+Facility[facId=1, name='Tennis Court 2', memberCost=5.0, guestCost=25.0, initialOutlay=8000.0, monthlyMaintenance=200.0]
+Facility[facId=2, name='Badminton Court', memberCost=0.0, guestCost=16.0, initialOutlay=4000.0, monthlyMaintenance=50.0]
+Facility[facId=3, name='Table Tennis', memberCost=0.0, guestCost=5.0, initialOutlay=320.0, monthlyMaintenance=10.0]
+Facility[facId=4, name='Massage Room 1', memberCost=35.0, guestCost=80.0, initialOutlay=4000.0, monthlyMaintenance=3000.0]
+Facility[facId=5, name='Massage Room 2', memberCost=35.0, guestCost=80.0, initialOutlay=4000.0, monthlyMaintenance=3000.0]
+Facility[facId=6, name='Squash Court', memberCost=4.0, guestCost=18.0, initialOutlay=5000.0, monthlyMaintenance=80.0]
+Facility[facId=7, name='Snooker Table', memberCost=0.0, guestCost=5.0, initialOutlay=450.0, monthlyMaintenance=15.0]
+Facility[facId=8, name='Pool Table', memberCost=0.0, guestCost=5.0, initialOutlay=400.0, monthlyMaintenance=15.0]
+12:20:57.323 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:57.323 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+12:20:57.324 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:57.325 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+12:20:57.325 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:57.325 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+12:20:57.325 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:57.325 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+12:20:57.326 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:57.326 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+12:20:57.327 [main] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext [1371376476] from cache with key [[MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+12:20:57.327 [main] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@374ccb9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+12:20:57.328 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@74c7522c testClass = TestJPA2, testInstance = TestJPA2@6d17914a, testMethod = testFetchData@TestJPA2, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@77c23d90 testClass = TestJPA2, locations = '{}', classes = '{class SpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7f485fda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8519cb4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ce69770, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e84203], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  </testcase>
+</testsuite>

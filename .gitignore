@@ -1,0 +1,4 @@
+# Project exclude paths
+/core-module/target/
+/out/
+/rest-module/target/
